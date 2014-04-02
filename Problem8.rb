@@ -24,10 +24,9 @@ NUMBERSTR = "73167176531330624919225119674426574742355349194934
 max = i = 0
 
 while i <= (NUMBERSTR.length - 5)
-	i += 5 if NUMBERSTR[i..i+4] =~ /0+/ # Zero non compare tra le prime 5 cifre e non ci sono sei "0" consecutivi
+	i += 5 if NUMBERSTR[i..i+4] =~ /0+/
 	mul = 1
-	NUMBERSTR[i..i+4].each_char do
-		|number|
+	NUMBERSTR[i..i+4].each_char do |number|
 		mul *= number.to_i
 	end
 	max = mul if mul > max
