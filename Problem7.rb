@@ -9,7 +9,7 @@ TODO = cardinal.to_i
 i = 3
 c = 1
 while i <= TODO ** 2
-	if isPrime?(i)
+	if i.to_i.isPrime?
 		c += 1
 		if c == TODO
 			puts "The #{c}st prime number is: #{i}"

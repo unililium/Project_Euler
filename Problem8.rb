@@ -21,16 +21,18 @@ NUMBERSTR = "73167176531330624919225119674426574742355349194934
 05886116467109405077541002256983155200055935729725
 71636269561882670428252483600823257530420752963450"
 
-max = i = 0
-
-while i <= (NUMBERSTR.length - 5)
-	i += 5 if NUMBERSTR[i..i+4] =~ /0+/
-	mul = 1
-	NUMBERSTR[i..i+4].each_char do |number|
-		mul *= number.to_i
+def Problem8(n)
+	max = i = 0
+	while i <= (n.length - 5)
+		i += 5 if n[i..i+4] =~ /0+/
+		mul = 1
+		n[i..i+4].each_char do |number|
+			mul *= number.to_i
+		end
+		max = mul if mul > max
+		i += 1
 	end
-	max = mul if mul > max
-	i += 1
+	puts max
 end
 
-puts max
+Problem8(NUMBERSTR)
