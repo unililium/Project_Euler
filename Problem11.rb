@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby -wKU
 
 matrix = Hash.new(0)
 
@@ -12,11 +12,10 @@ file.each_line { |line|
   		column += 1
 	}
 	row += 1
-}  
+}
 file.close
 
 max = 0
-a = []
 m = 4
 for i in 0..19
 	for j in 0..19
