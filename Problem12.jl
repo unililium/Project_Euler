@@ -12,8 +12,7 @@ function numdivisors(n)
 	return result
 end
 
-i = 1
-tn = 1
+i = tn = 1
 while numdivisors(tn) < 500
 	tn += i + 1
 	i += 1
