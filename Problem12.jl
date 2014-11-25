@@ -6,7 +6,7 @@ function numdivisors(n)
 			result += 2
 		end
 	end
-	if n == z * z
+	if n == z ^ 2
 		result -= 1
 	end
 	return result
@@ -18,3 +18,4 @@ while numdivisors(tn) < 500
 	i += 1
 	println(tn)
 end
+println("^Solution^")
