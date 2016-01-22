@@ -1,3 +1,5 @@
+#!/usr/bin/env julia
+
 function numdivisors(n)
 	result = 0
 	z = floor(sqrt(n))

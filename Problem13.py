@@ -5,9 +5,7 @@ with open("Problem13_numbers") as f:
 
 numbers = [int(string) for string in content]
 
-total = 0
-for number in numbers:
-    total += number
+total = sum(numbers)
 
 solution = str(total)[:10]
 print(solution)
