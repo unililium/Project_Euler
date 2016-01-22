@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 with open("Problem13_numbers") as f:
     content = f.readlines()
